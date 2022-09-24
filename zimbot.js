@@ -2874,7 +2874,6 @@ m.reply(`*Send Image/Video With Caption* ${prefix + command}\n*Duration Video 1-
 }
 }
 break
-break
 	       case 'attp': case 'ttp': {
            if (!text) throw `Example : ${prefix + command} text`
            await hisoka.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'hisoka', 'morou', m, {asSticker: true})
