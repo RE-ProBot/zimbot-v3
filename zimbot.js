@@ -2874,14 +2874,11 @@ m.reply(`*Send Image/Video With Caption* ${prefix + command}\n*Duration Video 1-
 }
 }
 break
-case 'attp': {
-if (isBan) throw mess.ban
-           if (!text) throw `*Example : ${prefix + command} drips hi*`
-           if (!isInventoryLimit){ addInventoriLimit(m.sender) }
-            if (isLimit < 1) return m.reply(mess.endLimit)
-            kurangLimit(m.sender, 1)
-            m.reply(`*1 limit used*`)
-           await ZimBotInc.sendMedia(m.chat, `https://cililitan.herokuapp.com/api/attp?teks=${text}`, 'ZIM', 'BOT M D', m, {asSticker: true}).catch((err) => m.reply('*error while sending sticker*'))
+break
+	       case 'attp': case 'ttp': {
+           if (!text) throw `Example : ${prefix + command} text`
+           await hisoka.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'hisoka', 'morou', m, {asSticker: true})
+
          }
          break
 case 'attp4': {
