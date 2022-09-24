@@ -1093,7 +1093,7 @@ Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
             m.reply(`
 *Don't tag him!*
 *He's in AFK* ${reason ? 'with reason ' + reason : 'no reason'}
-Selama ${clockString(new Date - afkTime)}
+Time ${clockString(new Date - afkTime)}
 `.trim())
         }
 
