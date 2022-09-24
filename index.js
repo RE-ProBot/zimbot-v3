@@ -77,7 +77,7 @@ async function startZimBotInc() {
     const ZimBotInc = ZimBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['ZIM BOT INC','Safari','1.0.0'],
+        browser: ['SkyBot','Safari','1.0.0'],
         auth: state
     })
 
@@ -145,7 +145,7 @@ let feler = pickRandom(doku)
                 var buffer = await getBuffer(ppuser)
                 let fgclink = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 he = `Welcome To ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
-                let link = `https://youtu.be/ww4z2m3uORU`
+                let link = `https://skybot.link`
 let buttons = [
 {buttonId: `halo`, buttonText: {displayText: 'WELCOME'}, type: 1}
 ]
@@ -157,12 +157,12 @@ mentions: [num],
 fileName: `Welcome To ${metadata.subject}`,
 fileLength: 99999999999999,
 caption: he,
-footer: `©ZIM BOT INC 2022`,
+footer: `©SkͥyBͣoͫt 2022`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `Don't forget to smile today`,
-body: `SUBSCRIBE DRIPS OFC`,
+body: `Made by SkyBot`,
 mediaType:2,
 thumbnail: buffer,
 sourceUrl: link,
@@ -173,7 +173,7 @@ ZimBotInc.sendMessage(anu.id, buttonMessage, {quoted:fgclink})
                 } else if (anu.action == 'remove') {
                     let fgclink = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     he = `He/She is gone bro ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
-                    let link = `https://youtu.be/ww4z2m3uORU`
+                    let link = `https://skybot.link`
 let buttons = [
 {buttonId: `halo`, buttonText: {displayText: 'BYE'}, type: 1}
 ]
@@ -185,12 +185,12 @@ mentions: [num],
 fileName: `He/She is gone bro ${metadata.subject}`,
 fileLength: 99999999999999,
 caption: he,
-footer: `©ZIM BOT INC 2022`,
+footer: `©SkͥyBͣoͫt 2022`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `BYE DONT COME BACK HERE OKAY`,
-body: `SUBSCRIBE DRIPS OFC`,
+body: `SUBSCRIBE SkͥyBͣoͫt`,
 mediaType:2,
 thumbnail: buffer,
 sourceUrl: link,
@@ -244,7 +244,7 @@ ZimBotInc.sendMessage(anu.id, buttonMessage, {quoted:fgclink})
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await ZimBotInc.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nFN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:DRIPS\nitem2.EMAIL;type=INTERNET:reinhardtuna@mail.uk\nitem2.X-ABLabel:Email\nitem3.URL:https://github.com/zimb-bot/\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;ZIMBABWE;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nFN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:SkyBot\nitem2.EMAIL;type=INTERNET:emma@skybot.link\nitem2.X-ABLabel:Email\nitem3.URL:https://skybot.link/\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;SKYBOT;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	ZimBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
